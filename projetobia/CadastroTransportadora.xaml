@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="projetobia.CadastroTransportadora"
+             BackgroundColor="LightBlue">
+
+    <ContentPage.Content>
+        <StackLayout Padding="30" 
+                     VerticalOptions="Center">
+
+            <Label Text="CADASTRO DE TRANSPORTADORA" 
+                   FontSize="Large" 
+                   HorizontalOptions="Center" 
+                   Margin="0,0,0,20"/>
+
+            <Entry x:Name="nomeEntry" 
+                   Placeholder="NOME DA TRANSPORTADORA" 
+                   Margin="0,0,0,10"/>
+
+            <Entry x:Name="telefoneEntry" 
+                   Placeholder="TELEFONE" 
+                   Margin="0,0,0,10"/>
+
+            <Entry x:Name="emailEntry" 
+                   Placeholder="E-MAIL" 
+                   Margin="0,0,0,10"/>
+
+            <Entry x:Name="enderecoEntry" 
+                   Placeholder="ENDEREÇO" 
+                   Margin="0,0,0,10"/>
+
+            <Entry x:Name="cnpjEntry" 
+                   Placeholder="CNPJ" 
+                   Margin="0,0,0,10"/>
+
+            <Entry x:Name="tipoFornecimentoEntry" 
+                   Placeholder="TIPO DO FORNECIMENTO" 
+                   Margin="0,0,0,20"/>
+
+            <Button Text="FEITO" 
+                    BackgroundColor="LightGray" 
+                    TextColor="Black" 
+                    Clicked="OnFeitoClicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

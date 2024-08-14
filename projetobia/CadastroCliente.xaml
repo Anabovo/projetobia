@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="projetobia.CadastroCliente"
+             Title="Cadastro do Cliente">
+    <ContentPage.Content>
+        <Grid Padding="10" BackgroundColor="#FF0080">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            
+            <Label Text="Cadastro do Cliente" 
+                   FontSize="24" 
+                   FontAttributes="Bold" 
+                   HorizontalOptions="Center"
+                   Grid.Row="0" />
+
+            <Entry Placeholder="Nome" 
+                   Grid.Row="1"
+                   Margin="0,10,0,0" />
+
+            <Entry Placeholder="Data de Nascimento" 
+                   Grid.Row="2"
+                   Margin="0,10,0,0" />
+
+            <Entry Placeholder="CPF" 
+                   Grid.Row="3"
+                   Margin="0,10,0,0" />
+
+            <Entry Placeholder="Endereço" 
+                   Grid.Row="4"
+                   Margin="0,10,0,0" />
+
+            <Entry Placeholder="Telefone" 
+                   Grid.Row="5"
+                   Margin="0,10,0,0" />
+
+            <Entry Placeholder="Novo Código" 
+                   Grid.Row="6"
+                   Margin="0,10,0,0" />
+
+            <Button Text="Feito" 
+                    Grid.Row="7"
+                    Margin="0,10,0,0"
+                    VerticalOptions="EndAndExpand" />
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

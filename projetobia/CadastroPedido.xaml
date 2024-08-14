@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="projetobia.CadastroPedido"
+             Title="Cadastro do Pedido">
+
+    <ContentPage.Content>
+        <StackLayout Padding="20" 
+                     BackgroundColor="#4B0082">
+            
+            <Label Text="Cadastro do Pedido" 
+                   FontSize="Large" 
+                   TextColor="White" 
+                   HorizontalOptions="Center"
+                   Margin="0,20,0,20"/>
+            
+            <Entry Placeholder="Código do Cliente" 
+                   x:Name="CodigoClienteEntry" 
+                   BackgroundColor="White"
+                   Margin="0,10"/>
+            
+            <Entry Placeholder="Telefone" 
+                   x:Name="TelefoneEntry" 
+                   BackgroundColor="White"
+                   Margin="0,10"/>
+            
+            <Entry Placeholder="Endereço" 
+                   x:Name="EnderecoEntry" 
+                   BackgroundColor="White"
+                   Margin="0,10"/>
+            
+            <Entry Placeholder="Código do Produto" 
+                   x:Name="CodigoProdutoEntry" 
+                   BackgroundColor="White"
+                   Margin="0,10"/>
+            
+            <StackLayout Orientation="Horizontal" 
+                         Margin="0,10">
+
+                <Entry Placeholder="Cor" 
+                       x:Name="CorEntry" 
+                       BackgroundColor="White"
+                       HorizontalOptions="FillAndExpand"
+                       Margin="0,0,10,0"/>
+                <Entry Placeholder="Quantidade" 
+                       x:Name="QuantidadeEntry" 
+                       BackgroundColor="White"
+                       HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            
+            <StackLayout Orientation="Horizontal" 
+                         Margin="0,10">
+
+                <Entry Placeholder="Frete" 
+                       x:Name="FreteEntry" 
+                       BackgroundColor="White"
+                       HorizontalOptions="FillAndExpand"
+                       Margin="0,0,10,0"/>
+
+                <Entry Placeholder="Valor Total" 
+                       x:Name="ValorTotalEntry" 
+                       BackgroundColor="White"
+                       HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            
+            <Button Text="Confirmar" 
+                    x:Name="ConfirmarButton" 
+                    BackgroundColor="#FFA500" 
+                    TextColor="White" 
+                    Margin="0,20"/>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

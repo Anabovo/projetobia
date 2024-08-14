@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="projetobia.CadastroProduto">
+
+    <ContentPage.Content>
+        <Grid BackgroundColor="Transparent">
+            <Grid.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="#483D8B" Offset="0.0" />
+                    <GradientStop Color="#FFD700" Offset="1.0" />
+                </LinearGradientBrush>
+            </Grid.Background>
+
+            <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Padding="30">
+                <Label Text="CADASTRO DO PRODUTO"
+                       FontSize="24"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Start"
+                       FontAttributes="Bold"
+                       Margin="0, 0, 0, 20"/>
+                
+                <Entry Placeholder="NOME DO PRODUTO:" Margin="0, 5"/>
+                <Entry Placeholder="CUSTO:" Margin="0, 5"/>
+                <Entry Placeholder="VALOR:" Margin="0, 5"/>
+                <Entry Placeholder="FORNECEDOR:" Margin="0, 5"/>
+                <Entry Placeholder="COR:" Margin="0, 5"/>
+                <Entry Placeholder="QUANTIDADE:" Margin="0, 5"/>
+
+                <Button Text="FEITO" Margin="0, 20" VerticalOptions="End"/>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
