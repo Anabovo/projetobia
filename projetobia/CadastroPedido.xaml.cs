@@ -1,6 +1,6 @@
 using Microsoft.Maui.Controls;
 
-namespace CadastroPedido
+namespace projetobia
 {
     public partial class CadastroPedido : ContentPage
     {

@@ -1,7 +1,7 @@
 using Microsoft.Maui.Controls;
 using System;
 
-namespace CadastroMateriaPrima
+namespace projetobia
 {
     public partial class CadastroMateriaPrima : ContentPage
     {
