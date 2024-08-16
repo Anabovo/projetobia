@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="projetobia.TelaInicial">
 
-    <Grid BackgroundColor="#FCE4EC" Padding="20">
+    <Grid BackgroundColor="#3C3B3B" Padding="20">
         <Grid.RowDefinitions>
             <RowDefinition Height="100"/>
             <RowDefinition Height="*" />
@@ -15,7 +15,6 @@
                TextColor="White"
                HorizontalOptions="Center"
                VerticalOptions="Center"
-               BackgroundColor="#C2185B"
                Grid.Row="0"/>
 
         <Grid Grid.Row="1" VerticalOptions="Center" HorizontalOptions="Center">
@@ -31,48 +30,49 @@
             </Grid.ColumnDefinitions>
 
             <Button Text="CLIENTE"
-                    BackgroundColor="#E3F2FD"
-                    TextColor="Black"
-                    Grid.Row="0" Grid.Column="0"
+                    BackgroundColor="#ff008b"
+                    TextColor="White"
+                    Grid.Row="0" 
+                    Grid.Column="0"
                     Margin="10"
                     Clicked="SelecionaCliente"/>
 
             <Button Text="FORNECEDOR"
-                    BackgroundColor="#E3F2FD"
-                    TextColor="Black"
+                    BackgroundColor="#ff008b"
+                    TextColor="White"
                     Grid.Row="0" 
                     Grid.Column="1"
                     Margin="10"
                     Clicked="SelecionaFornecedor"/>
 
             <Button Text="PRODUTO"
-                    BackgroundColor="#E3F2FD"
-                    TextColor="Black"
+                    BackgroundColor="#ff008b"
+                    TextColor="White"
                     Grid.Row="1" 
                     Grid.Column="0"
                     Margin="10"
                     Clicked="SelecionaProduto"/>
 
             <Button Text="MATERIA PRIMA"
-                    BackgroundColor="#E3F2FD"
-                    TextColor="Black"
+                    BackgroundColor="#ff008b"
+                    TextColor="White"
                     Grid.Row="1" 
                     Grid.Column="1"
                     Margin="10"
                     Clicked="SelecionaMateriaPrima"/>
 
             <Button Text="TRANSPORTADORA"
-                    BackgroundColor="#E3F2FD"
+                    BackgroundColor="#ff008b"
                     FontSize="14"
-                    TextColor="Black"
+                    TextColor="White"
                     Grid.Row="2" 
                     Grid.Column="0"
                     Margin="10"
                     Clicked="SelecionaTransportadora"/>
 
             <Button Text="PEDIDO"
-                    BackgroundColor="#E3F2FD"
-                    TextColor="Black"
+                    BackgroundColor="#ff008b"
+                    TextColor="White"
                     Grid.Row="2" Grid.Column="1"
                     Margin="10"
                     Clicked="SelecionaPedido"/>
