@@ -1,35 +1,86 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="projetobia.CadastroMateriaPrima"
-             BackgroundColor="LightGreen">
-    <ScrollView>
-        <StackLayout Padding="20" 
-                     VerticalOptions="Center" 
-                     HorizontalOptions="Center">
+             x:Class="projetobia.CadastroMateriaPrima">
+    <ContentPage.Content>
+        <Grid Padding="15" BackgroundColor="#3C3B3B">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
 
             <Label Text="Cadastro da Matéria Prima" 
                    FontSize="24" 
-                   HorizontalOptions="Center" 
-                   TextColor="Black"/>
+                   FontAttributes="Bold" 
+                   HorizontalOptions="Center"
+                   Grid.Row="0"
+                   Grid.ColumnSpan="3"
+                   BackgroundColor="#0000FF" />
 
             <Entry Placeholder="Nome da Matéria Prima" 
-                   x:Name="NomeMateriaPrimaEntry"/>
+                   TextColor="White"
+                   Grid.Row="1"
+                   Grid.ColumnSpan="3"
+                   Margin="0,10,0,0" />
 
-            <Entry Placeholder="Novo Código" 
-                   x:Name="NovoCodigoEntry"/>
-
-            <Entry Placeholder="Unidade" 
-                   x:Name="UnidadeEntry"/>
+            <Entry Placeholder="Unidade"
+                   TextColor="White" 
+                   Grid.Row="2"
+                   Grid.ColumnSpan="3"
+                   Margin="0,10,0,0" />
 
             <Entry Placeholder="Quantidade" 
-                   x:Name="QuantidadeEntry"/>
+                   TextColor="White"
+                   Grid.Row="3"
+                   Grid.ColumnSpan="3"
+                   Margin="0,10,0,0" />
 
             <Entry Placeholder="Fornecedor" 
-                   x:Name="FornecedorEntry"/>
+                   TextColor="White"
+                   Grid.Row="4"
+                   Grid.ColumnSpan="3"
+                   Margin="0,10,0,0" />
+
+            <Entry Placeholder="Novo Código" 
+                   TextColor="White"
+                   Grid.Row="5"
+                   Grid.ColumnSpan="3"
+                   Margin="0,10,0,0" />
 
             <Button Text="Feito" 
-                    Clicked="OnFeitoButtonClicked"/>
-        </StackLayout>
-    </ScrollView>
+                    Grid.Row="6"
+                    Grid.Column="0"
+                    Margin="0,10,10,0"
+                    VerticalOptions="EndAndExpand"
+                    BackgroundColor="#0000FF"/>
+
+            <Button Text="Voltar" 
+                    Grid.Column="1"
+                    Grid.Row="6"
+                    Margin="10,10,10,0"
+                    VerticalOptions="EndAndExpand"
+                    BackgroundColor="#0000FF"/>
+
+            <Button Text="Atualizar" 
+                    Grid.Column="2"
+                    Grid.Row="6"
+                    Margin="10,10,10,0"
+                    VerticalOptions="EndAndExpand"
+                    BackgroundColor="#0000FF"/>
+
+
+        </Grid>
+    </ContentPage.Content>
 </ContentPage>

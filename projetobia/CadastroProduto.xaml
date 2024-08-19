@@ -3,32 +3,92 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="projetobia.CadastroProduto">
 
-    <ContentPage.Content>
-        <Grid BackgroundColor="Transparent">
-            <Grid.Background>
-                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-                    <GradientStop Color="#483D8B" Offset="0.0" />
-                    <GradientStop Color="#FFD700" Offset="1.0" />
-                </LinearGradientBrush>
-            </Grid.Background>
+     <ContentPage.Content>
+        <Grid Padding="15" BackgroundColor="#3C3B3B">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
 
-            <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Padding="30">
-                <Label Text="CADASTRO DO PRODUTO"
-                       FontSize="24"
-                       HorizontalOptions="Center"
-                       VerticalOptions="Start"
-                       FontAttributes="Bold"
-                       Margin="0, 0, 0, 20"/>
-                
-                <Entry Placeholder="NOME DO PRODUTO:" Margin="0, 5"/>
-                <Entry Placeholder="CUSTO:" Margin="0, 5"/>
-                <Entry Placeholder="VALOR:" Margin="0, 5"/>
-                <Entry Placeholder="FORNECEDOR:" Margin="0, 5"/>
-                <Entry Placeholder="COR:" Margin="0, 5"/>
-                <Entry Placeholder="QUANTIDADE:" Margin="0, 5"/>
+            <Label Text="Cadastro do Produto" 
+                   FontSize="24" 
+                   FontAttributes="Bold" 
+                   HorizontalOptions="Center"
+                   Grid.Row="0"
+                   Grid.ColumnSpan="3"
+                   BackgroundColor="#FF8000" />
 
-                <Button Text="FEITO" Margin="0, 20" VerticalOptions="End"/>
-            </StackLayout>
+            <Entry Placeholder="Nome do Produto" 
+                   TextColor="White"
+                   Grid.Row="1"
+                   Grid.ColumnSpan="3"
+                   Margin="0,10,0,0" />
+
+            <Entry Placeholder="Custo"
+                   TextColor="White" 
+                   Grid.Row="2"
+                   Grid.ColumnSpan="3"
+                   Margin="0,10,0,0" />
+
+            <Entry Placeholder="Valor" 
+                   TextColor="White"
+                   Grid.Row="3"
+                   Grid.ColumnSpan="3"
+                   Margin="0,10,0,0" />
+
+            <Entry Placeholder="Fornecedor" 
+                   TextColor="White"
+                   Grid.Row="4"
+                   Grid.ColumnSpan="3"
+                   Margin="0,10,0,0" />
+
+            <Entry Placeholder="Cor"
+                   TextColor="White"
+                   Grid.ColumnSpan="3"
+                   Grid.Row="5"
+                   Margin="0,10,0,0" />
+
+            <Entry Placeholder="Novo Código do Produto" 
+                   TextColor="White"
+                   Grid.Row="6"
+                   Grid.ColumnSpan="3"
+                   Margin="0,10,0,0" />
+
+            <Button Text="Feito" 
+                    Grid.Row="8"
+                    Grid.Column="0"
+                    Margin="0,10,10,0"
+                    VerticalOptions="EndAndExpand"
+                    BackgroundColor="#FF8000"/>
+
+            <Button Text="Voltar" 
+                    Grid.Column="1"
+                    Grid.Row="8"
+                    Margin="10,10,10,0"
+                    VerticalOptions="EndAndExpand"
+                    BackgroundColor="#FF8000"/>
+
+            <Button Text="Atualizar" 
+                    Grid.Column="2"
+                    Grid.Row="8"
+                    Margin="10,10,10,0"
+                    VerticalOptions="EndAndExpand"
+                    BackgroundColor="#FF8000"/>
+
+
         </Grid>
     </ContentPage.Content>
 </ContentPage>
