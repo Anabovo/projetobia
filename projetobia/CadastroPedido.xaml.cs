@@ -14,5 +14,10 @@ namespace projetobia
             if (Application.Current != null)
                 Application.Current.MainPage = new TelaInicial();
         }
+
+         void BotaoFeitoPedClicado(object sender, EventArgs args)
+        {
+            Application.Current.MainPage = new TelaInicial();
+        }
     }
 }

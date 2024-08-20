@@ -9,5 +9,16 @@ namespace projetobia
         {
             InitializeComponent();
         }
+
+         private void VoltarDaMateriaPrima(object sender, EventArgs e)
+        {
+            if (Application.Current != null)
+                Application.Current.MainPage = new TelaInicial();
+        }
+
+         void BotaoFeitoMatPClicado(object sender, EventArgs args)
+        {
+            Application.Current.MainPage = new TelaInicial();
+        }
     }
 }

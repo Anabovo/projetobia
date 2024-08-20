@@ -78,14 +78,16 @@
                     Grid.Column="0"
                     Margin="0,10,10,0"
                     VerticalOptions="EndAndExpand"
-                    BackgroundColor="#7F00FF"/>
+                    BackgroundColor="#7F00FF"
+                    Clicked="BotaoFeitoTraspClicado"/>
 
             <Button Text="Voltar" 
                     Grid.Column="1"
                     Grid.Row="8"
                     Margin="10,10,10,0"
                     VerticalOptions="EndAndExpand"
-                    BackgroundColor="#7F00FF"/>
+                    BackgroundColor="#7F00FF"
+                    Clicked="VolarDaTransportadora"/>
 
             <Button Text="Atualizar" 
                     Grid.Column="2"

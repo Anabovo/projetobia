@@ -9,5 +9,16 @@ namespace projetobia
         {
             InitializeComponent();
         }
+
+         private void VoltarDoFornecedor(object sender, EventArgs e)
+        {
+            if (Application.Current != null)
+                Application.Current.MainPage = new TelaInicial();
+        }
+
+         void BotaoFeitoFornClicado(object sender, EventArgs args)
+        {
+            Application.Current.MainPage = new TelaInicial();
+        }
     }
 }
