@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="projetobia.ListaClientePage"
+             Shell.NavBarIsVisible="false">
+
+    <VerticalStackLayout Padding="20" Spacing="20">
+        
+        <Grid ColumnDefinitions="Auto, *, Auto, Auto">
+            <Button Text="Voltar"
+                    Clicked="VoltarClicado"
+                    Grid.Column="0"/>
+            <Entry  x:Name="Busca" 
+                    Placeholder="Buscar"
+                    Grid.Column="1"/>
+            <Button Text="🔍" 
+                    Clicked="BuscarClicado" 
+                    Grid.Column="2"/>
+            <Button Text="Cadastre-se" 
+                    Clicked="CadastroClicado" 
+                    Grid.Column="3"/>
+        </Grid>
+                
+                <Grid ColumnDefinitions="25,*,*,*">
+
+                    <Label  Text="Id" 
+                            FontAttributes="Bold" 
+                            Grid.Column="0"/>
+                    <Label  Text="Nome" 
+                            FontAttributes="Bold" 
+                            Grid.Column="1"/>
+                    <Label  Text="Telefone" 
+                            FontAttributes="Bold" 
+                            Grid.Column="2"/>
+                    <Label  Text="CPF"
+                            FontAttributes="Bold"
+                            Grid.Column="3"/>
+                </Grid>
+        <ListView x:Name="Lista" >
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                <ViewCell>
+                    <Grid ColumnDefinitions="25, *, *, *">
+                        <Label  Text="{Binding Id}" 
+                                Grid.Column="0"/>
+                        <Label  Text="{Binding Nome}" 
+                                Grid.Column="1"/>
+                        <Label  Text="{Binding Telefone}" 
+                                Grid.Column="2"/>
+                        <Label  Text="{Binding CPF}"
+                                Grid.Column="3"/>
+                    </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+    </VerticalStackLayout>
+    
+</ContentPage>
