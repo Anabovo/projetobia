@@ -1,12 +1,12 @@
 using Modelos;
 
-namespace projetobia.Controles;
+namespace Controles;
 
-public class MateriaprimaControle : ControleBase
+public class ControleMateriaprima : ControleBase
 {
   //----------------------------------------------------------------------------
 
-  public MateriaprimaControle() : base()
+  public ControleMateriaprima() : base()
   {
     NomeDaTabela = "Materiasprimas";
   }

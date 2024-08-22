@@ -1,5 +1,5 @@
-using projetobia.Controles;
-using projetobia.Modelos;
+using Controles;
+using Modelos;
 using Microsoft.Maui.Controls;
 using System.Collections.ObjectModel;
 using System.Windows.Input;

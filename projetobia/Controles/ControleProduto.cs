@@ -1,7 +1,7 @@
 using Modelos;
-using projetobia.Modelos;
 
-namespace projetobia.Controles;
+
+namespace Controles;
 
 public class ControleProduto : ControleBase
 {

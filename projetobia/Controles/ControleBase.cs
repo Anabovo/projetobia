@@ -1,7 +1,7 @@
 using Modelos;
 using LiteDB;
 
-namespace projetobia.Controles;
+namespace Controles;
 
 public class ControleBase
 {

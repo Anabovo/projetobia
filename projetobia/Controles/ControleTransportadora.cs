@@ -1,6 +1,6 @@
 using Modelos;
 
-namespace projetobia.Controles;
+namespace Controles;
 
 public class ControleTransportadora: ControleBase
 {
