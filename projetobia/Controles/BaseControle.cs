@@ -3,7 +3,7 @@ using LiteDB;
 
 namespace Controles;
 
-public class ControleBase
+public class BaseControle
 {
   //----------------------------------------------------------------------------
 
@@ -12,7 +12,7 @@ public class ControleBase
 
   //----------------------------------------------------------------------------
 
-  public ControleBase()
+  public BaseControle()
   {
     var pathToPersonalFolder = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "AppEquipe1.db");
 

@@ -2,7 +2,7 @@ using Modelos;
 
 namespace Controles;
 
-public class ControlePedido : ControleBase
+public class ControlePedido : BaseControle
 {
   //----------------------------------------------------------------------------
 
@@ -16,7 +16,7 @@ public class ControlePedido : ControleBase
   public virtual Registro? Ler(int idPedido)
   {
     var collection = liteDB.GetCollection<Pedido>(NomeDaTabela);
-    return collection.FindOne(d => d.IdPedido == idPedido);
+    return collection.FindOne(d => d.id == idPedido);
   }
 
   //----------------------------------------------------------------------------

@@ -2,45 +2,45 @@ using Modelos;
 
 namespace Controles;
 
-public class ControleMateriaprima : ControleBase
+public class ControleMateriaPrima : BaseControle
 {
   //----------------------------------------------------------------------------
 
-  public ControleMateriaprima() : base()
+  public ControleMateriaPrima() : base()
   {
-    NomeDaTabela = "Materiasprimas";
+    NomeDaTabela = "MateriasPrimas";
   }
 
   //----------------------------------------------------------------------------
 
-  public virtual Registro? Ler(int idMateriaprima)
+  public virtual Registro? Ler(int idMateriaPrima)
   {
-    var collection = liteDB.GetCollection<Materiaprima>(NomeDaTabela);
-    return collection.FindOne(d => d.IdMateriaPrima == idMateriaprima);
+    var collection = liteDB.GetCollection<MateriaPrima>(NomeDaTabela);
+    return collection.FindOne(d => d.id == idMateriaPrima);
   }
 
   //----------------------------------------------------------------------------
 
-  public virtual List<Materiaprima>? LerTodos()
+  public virtual List<MateriaPrima>? LerTodos()
   {
-    var tabela = liteDB.GetCollection<Materiaprima>(NomeDaTabela);
-    return new List<Materiaprima>(tabela.FindAll().OrderBy(d => d.IdMateriaPrima));
+    var tabela = liteDB.GetCollection<MateriaPrima>(NomeDaTabela);
+    return new List<MateriaPrima>(tabela.FindAll().OrderBy(d => d.idMateriaPrima));
   }
 
   //----------------------------------------------------------------------------
 
-  public virtual void Apagar(int idMateriaprima)
+  public virtual void Apagar(int idMateriaPrima)
   {
-    var collection = liteDB.GetCollection<Materiaprima>(NomeDaTabela);
-    collection.Delete(idMateriaprima);
+    var collection = liteDB.GetCollection<MateriaPrima>(NomeDaTabela);
+    collection.Delete(idMateriaPrima);
   }
 
   //----------------------------------------------------------------------------
 
-  public virtual void CriarOuAtualizar(Materiaprima Materiaprima)
+  public virtual void CriarOuAtualizar(MateriaPrima MateriaPrima)
   {
-    var collection = liteDB.GetCollection<Materiaprima>(NomeDaTabela);
-    collection.Upsert(Materiaprima);
+    var collection = liteDB.GetCollection<MateriaPrima>(NomeDaTabela);
+    collection.Upsert(MateriaPrima);
   }
 
   //----------------------------------------------------------------------------

@@ -2,7 +2,7 @@ using Modelos;
 
 namespace Controles;
 
-public class ControleTransportadora: ControleBase
+public class ControleTransportadora: BaseControle
 {
   //----------------------------------------------------------------------------
 
@@ -16,7 +16,7 @@ public class ControleTransportadora: ControleBase
   public virtual Registro? Ler(int idTransportadora)
   {
     var collection = liteDB.GetCollection<Transportadora>(NomeDaTabela);
-    return collection.FindOne(d => d.Id == idTransportadora);
+    return collection.FindOne(d => d.id == idTransportadora);
   }
 
   //----------------------------------------------------------------------------

@@ -8,7 +8,7 @@ public class Fornecedor:Registro
     public string endereco {get;set;}
     public string fornecimento {get;set;}
     public string email {get;set;}
-    private int id {get;set;}
+    public int id {get;set;}
 
  }
 }

@@ -2,7 +2,7 @@ using Modelos;
 
 namespace Controles;
 
-public class ControleCliente : ControleBase
+public class ControleCliente : BaseControle
 {
   //----------------------------------------------------------------------------
 
@@ -16,7 +16,7 @@ public class ControleCliente : ControleBase
   public virtual Registro? Ler(int idCliente)
   {
     var collection = liteDB.GetCollection<Cliente>(NomeDaTabela);
-    return collection.FindOne(d => d.Id == idCliente);
+    return collection.FindOne(d => d.id == idCliente);
   }
 
   //----------------------------------------------------------------------------
@@ -24,7 +24,7 @@ public class ControleCliente : ControleBase
   public virtual List<Cliente>? LerTodos()
   {
     var tabela = liteDB.GetCollection<Cliente>(NomeDaTabela);
-    return new List<Cliente>(tabela.FindAll().OrderBy(d => d.Id));
+    return new List<Cliente>(tabela.FindAll().OrderBy(d => d.id));
   }
 
   //----------------------------------------------------------------------------
