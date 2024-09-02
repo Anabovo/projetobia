@@ -8,7 +8,7 @@ public class MateriaPrima:Registro
     public string endereco { get; set; }
     public string tipofornecimento { get; set; }
     public string email {get;set;}
-    private int id {get;set;}
+    public int Id {get;set;}
 
 }
 }

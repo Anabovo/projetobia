@@ -13,13 +13,13 @@ namespace projetobia
         private void SelecionaCliente(object sender, EventArgs e)
         {
             if (Application.Current != null) 
-            Application.Current.MainPage = new CadastroCliente();
+            Application.Current.MainPage = new ListaClientePage();
         }
 
         private void SelecionaFornecedor(object sender, EventArgs e)
         {
             if (Application.Current != null) 
-            Application.Current.MainPage = new CadastroFornecedor();
+            Application.Current.MainPage = new ListaFornecedorPage();
         }
 
         private void SelecionaProduto(object sender, EventArgs e)
@@ -43,7 +43,7 @@ namespace projetobia
         private void SelecionaPedido(object sender, EventArgs e)
         {
             if (Application.Current != null) 
-            Application.Current.MainPage = new CadastroPedido();
+            Application.Current.MainPage = new ListaPedidoPage();
         }
 
     }

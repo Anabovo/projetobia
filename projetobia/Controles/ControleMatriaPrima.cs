@@ -16,7 +16,7 @@ public class ControleMateriaPrima : BaseControle
   public virtual Registro? Ler(int idMateriaPrima)
   {
     var collection = liteDB.GetCollection<MateriaPrima>(NomeDaTabela);
-    return collection.FindOne(d => d.id == idMateriaPrima);
+    return collection.FindOne(d => d.Id == idMateriaPrima);
   }
 
   //----------------------------------------------------------------------------
@@ -24,7 +24,7 @@ public class ControleMateriaPrima : BaseControle
   public virtual List<MateriaPrima>? LerTodos()
   {
     var tabela = liteDB.GetCollection<MateriaPrima>(NomeDaTabela);
-    return new List<MateriaPrima>(tabela.FindAll().OrderBy(d => d.idMateriaPrima));
+    return new List<MateriaPrima>(tabela.FindAll().OrderBy(d => d.Id));
   }
 
   //----------------------------------------------------------------------------

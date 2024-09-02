@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="projetobia.ListaFornecedorPage"
+             Title="Controle de Fornecedores">
+
+    <StackLayout Padding="20" 
+                 Spacing="20"
+                 BackgroundColor="#3C3B3B">
+        
+        <Grid ColumnDefinitions="Auto,*, Auto, Auto">
+        
+            <Button Text="Voltar"
+                    Clicked="VoltarClicado"
+                    Grid.Column="0"
+                    BackgroundColor="#FF3333"/>
+            <Entry  x:Name="SearchEntry" 
+                    Placeholder="Buscar" 
+                    Grid.Column="1"/>
+            <Button Text="🔍" 
+                    Clicked="OnSearchClicked" 
+                    Grid.Column="2"
+                    BackgroundColor="#FF3333"/>
+            <Button Text="Cadastre-se" 
+                    Clicked="CadastrarClicado" 
+                    Grid.Column="3"
+                    BackgroundColor="#FF3333"/>
+        </Grid>
+
+        <CollectionView x:Name="ListaFornecedor">
+            <CollectionView.Header>
+                <Grid ColumnDefinitions="*,*,*">
+
+                    <Label  Text="Id" 
+                            FontAttributes="Bold" 
+                            Grid.Column="0"
+                            TextColor="White"/>
+                    <Label  Text="Nome" 
+                            FontAttributes="Bold" 
+                            Grid.Column="1"
+                            TextColor="White"/>
+                    <Label  Text="Telefone" 
+                            FontAttributes="Bold" 
+                            Grid.Column="2"
+                            TextColor="White"/>
+                </Grid>
+            </CollectionView.Header>
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid ColumnDefinitions="*,*,*">
+                        <Label  Text="{Binding Id}" 
+                                Grid.Column="0"/>
+                        <Label  Text="{Binding Nome}" 
+                                Grid.Column="1"/>
+                        <Label  Text="{Binding Telefone}" 
+                                Grid.Column="2"/>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+    </StackLayout>
+    
+</ContentPage>
