@@ -16,8 +16,9 @@ namespace projetobia
                 Application.Current.MainPage = new TelaInicial();
         }
 
-         void BotaoFeitoMatPClicado(object sender, EventArgs args)
+         async void BotaoFeitoMatPClicado(object sender, EventArgs args)
         {
+            await DisplayAlert("Cliente salvo com sucesso!", "Dados Salvos!", "Ok");
             Application.Current.MainPage = new TelaInicial();
         }
     }

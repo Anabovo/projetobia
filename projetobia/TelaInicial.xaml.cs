@@ -1,4 +1,5 @@
 using System;
+using AppEquipe1;
 using Microsoft.Maui.Controls;
 
 namespace projetobia
@@ -31,7 +32,7 @@ namespace projetobia
         private void SelecionaMateriaPrima(object sender, EventArgs e)
         {
             if (Application.Current != null) 
-            Application.Current.MainPage = new CadastroMateriaPrima();
+            Application.Current.MainPage = new EstoqueMateriaPrima();
         }
 
         private void SelecionaTransportadora(object sender, EventArgs e)
@@ -43,7 +44,7 @@ namespace projetobia
         private void SelecionaPedido(object sender, EventArgs e)
         {
             if (Application.Current != null) 
-            Application.Current.MainPage = new ListaPedidoPage();
+            Application.Current.MainPage = new CadastroPedido();
         }
 
     }
